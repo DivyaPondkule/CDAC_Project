@@ -85,7 +85,7 @@ if selected== "Home":
 
 if selected == "Top 50 Books":
     st.header("Top 50 books")
-    popular_df = pickle.load(open('artifacts/popular_df.pkl', 'rb'))
+    popular_df = pickle.load(open('popular_df.pkl', 'rb'))
 
     for i in range(len(popular_df)):
         st.text(str(i + 1) + ". " + popular_df.iloc[i][1])
@@ -94,7 +94,7 @@ if selected == "Top 50 Books":
 if selected ==  "Books Popular yearly":
 
     st.header("Books popular yearly")
-    popular_df_y = pickle.load(open('artifacts/popular_df_y.pkl', 'rb'))
+    popular_df_y = pickle.load(open('popular_df_y.pkl', 'rb'))
 
     for i in range(len(popular_df_y)):
         # st.text(str(i+1)+". "+popular_df_y.iloc[i][1]+" Year: "+str(popular_df_y.iloc[i][3]))
